@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-container {
+    width: 100%;
+    padding-top: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    gap: 10px;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 16px;
+
+    width: 160px;
+    padding: 10px 0;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+button.primary {
+    background-color: hsl(271, 64%, 60%);
+    color: white;
+    transition: background-color 250ms;
+}
+
+button.secondary {
+    background-color: white;
+
+    border: 1px solid hsl(271, 64%, 60%);
+}
+
+button svg {
+    height: 40px;
+    width: 40px;
+}
+
+button.primary svg {
+    fill: white;
+}
+
+button.secondary svg {
+    fill: hsl(271, 64%, 60%);
+    transition: fill 250ms ease-out;
+}
+
+button.primary:hover {
+    background-color: hsl(271, 40%, 45%);
+    transition: background-color 250ms ease-out;
+}
+
+button.secondary:hover {
+    border-color: hsl(271, 40%, 45%);
+    transition: border-color 250ms ease-out;
+}
+
+button.secondary:hover svg {
+    fill: hsl(271, 40%, 45%);
+}
+
+#ctw-btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(155, 86, 218);
+}
+
+#ctw-btn svg {
+    fill: hsl(67, 57%, 50%);
+}
+
+#ctw-btn:hover svg {
+    fill: hsl(67, 50%, 45%);
+}
