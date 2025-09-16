@@ -7,44 +7,48 @@
     <title>Task 1 - Flex Container</title>
   </head>
   <body>
-    <h1 id="header">Flex container task</h1>
-    <div class="btn-container">
-      <button class="secondary">
-        <svg>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <main id="main-content">
+      <h1 id="header">Flex container task</h1>
+      <div class="btn-container" role="group" aria-label="Booking actions">
+      <button type="button" class="secondary">
+        <svg aria-hidden="true" focusable="false">
           <use xlink:href="./workflow.svg#workflow-fluid-flow"></use>
         </svg>
         Trip shopping cart
       </button>
       <button class="primary">
-        <svg>
+        <svg aria-hidden="true" focusable="false">
           <use xlink:href="./workflow.svg#workflow-air"></use>
         </svg>
         Book flight
       </button>
       <button class="primary">
-        <svg>
+        <svg aria-hidden="true" focusable="false">
           <use xlink:href="./workflow.svg#workflow-rail"></use>
         </svg>
         Book train
       </button>
       <button class="primary">
-        <svg>
+        <svg aria-hidden="true" focusable="false">
           <use xlink:href="./workflow.svg#workflow-hotel"></use>
         </svg>
         Book hotel
       </button>
       <button class="primary">
-        <svg>
+        <svg aria-hidden="true" focusable="false">
           <use xlink:href="./workflow.svg#workflow-car"></use>
         </svg>
         Book car/transfer
       </button>
-      <button class="secondary" id="ctw-btn">
-        <svg>
+      <button type="button" class="secondary" id="ctw-btn" aria-label="Create cytric travel wizard request (cTW)">
+        <svg aria-hidden="true" focusable="false">
           <use xlink:href="./workflow.svg#workflow-wizzard"></use>
         </svg>
         cTW
       </button>
     </div>
+    </main>
   </body>
 </html>

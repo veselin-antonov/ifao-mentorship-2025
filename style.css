@@ -11,13 +11,31 @@
     margin-top: 50px;
 }
 
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+    left: 10px;
+    top: 10px;
+    padding: 8px 12px;
+    background: white;
+    color: black;
+    border: 2px solid rgba(0,0,0,0.8);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
 .btn-container {
     width: 100%;
     padding-top: 300px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 160px);
     justify-content: center;
-    align-content: center;
+    justify-items: center;
 
     gap: 10px;
 }
@@ -36,6 +54,15 @@ button {
     border-radius: 5px;
 
     cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:focus-visible {
+    box-shadow: 0 0 0 3px rgba(19, 110, 255, 0.45);
+    border-radius: 5px;
 }
 
 button.primary {
